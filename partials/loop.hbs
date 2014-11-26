@@ -1,0 +1,29 @@
+{{! This is the post loop - each post will be output using this markup }}
+{{#foreach posts}}
+<article class="{{post_class}}">
+
+    {{#if image}}
+        <div class="image-holder show">
+        <a href="{{url}}" class="inner" style="background-image: url('{{image}}');">
+         <img src="{{image}}">
+        </a>
+      </div>
+    {{/if}}
+
+    <div class="meta">
+        <time datetime="{{date format='YYYY-MM-DD'}}"><a href="{{url}}">{{date format="MMMM DD, YYYY"}}</a></time>
+    </div>
+
+    <header>
+        <h1><a href="{{url}}">{{title}}</a></h1>
+    </header>
+
+    <div class="text">
+        <p>{{excerpt words="45"}}</p>
+        <a href="{{url}}" class="readmore">Continue Reading</a>
+    </div>
+</article>
+{{/foreach}}
+
+{{! Previous/next page links - displayed on every page }}
+{{pagination}}

@@ -1,0 +1,87 @@
+{{!< default}}
+
+{{#post}}
+
+    {{#if image}}
+        <div id="feature_image" class="horz show">
+            <div class="inner" style="background-image: url('{{image}}')">
+                <img src="{{image}}">
+            </div>
+        </div>
+    {{/if}}
+
+    <article role="main" class="{{#if image}}image{{/if}}">
+        <header>
+            <a href="{{@blog.url}}" id="home_link">«</a>
+            <div class="meta"><time datetime="{{date format='YYYY-MM-DD'}}"><a href="{{url}}">{{date format="MMMM DD, YYYY"}}</a></time> <span class="count" id="js-reading-time"></span></div>
+            <h1>{{title}}</h1>
+        </header>
+
+        <div class="text" id="js-post-content">
+            {{content}}
+        </div>
+
+        {{!-- TODO: Social sharing. Requires JS & embeds --}}
+        {{!--
+        <menu>
+            <iframe src="/_/like_button?post_id=151560" frameborder="0" scrolling="no" title="Like Questions — Part 2" width="70" height="85"></iframe>
+            <a href="" id="btn_share" class="btn" title="Share">
+                <span aria-hidden="true" data-icon="S"></span>
+                <strong>Share</strong>
+            </a>
+            <a href="https://twitter.com/intent/tweet?related=roon_app&amp;text=%40soffes%20Interesting%20post%21%20%E2%80%94%20http%3A%2F%2Fsam.roon.io%2Fquestions-part-2" id="btn_comment" class="btn" target="_blank">
+                <span aria-hidden="true" data-icon="C"></span> Comment on Twitter
+            </a>
+        </menu>
+        --}}
+
+
+    {{#author}}
+        <footer role="contentinfo">
+
+            <div class="vcard">
+                <a href="{{@blog.url}}/rss" id="btn_feed" class="btn" title="Feed" target="_blank">
+                    <span aria-hidden="true" data-icon=")"></span>
+                    <strong>Feed</strong>
+                </a>
+
+                <a href="{{url}}" class="photo">
+                    <img src="{{image}}" alt="{{name}}">
+                </a>
+
+                <div class="details">
+                    <h4><a href="{{url}}" class="url n">{{name}}</a></h4>
+                    {{#if location}}{{location}}<br>{{/if}}
+                    {{#if website}}<a href="{{website}}">{{website}}</a>{{/if}}
+                </div>
+            </div>
+
+            <div id="user_bio">
+                <div class="inner">
+                    {{!-- TODO: Parse HTML for links --}}
+                    {{bio}}
+                </div>
+            </div>
+
+        </footer>
+    {{/author}}
+
+    </article>
+
+{{/post}}
+
+{{!-- TODO: Add next/prev posts --}}
+{{!--
+<div id="post_nav">
+    <nav role="navigation">
+        <a href="http://sam.roon.io/questions-part-2" id="post_next" title="Next Post">
+            <span aria-hidden="true" data-icon=">"></span>
+            Questions — Part 2
+        </a>
+        <a href="http://sam.roon.io/four-questions" id="post_prev" title="Previous Post">
+            Four Questions
+            <span aria-hidden="true" data-icon=">"></span>
+        </a>
+    </nav>
+</div>
+--}}
