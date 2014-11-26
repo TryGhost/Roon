@@ -20,7 +20,7 @@
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
-<body class="{{body_class}} {{#is 'index, tag, author'}}user{{/is}}">
+<body class="{{body_class}} {{#is 'index, tag, author'}}user{{/is}} {{#is 'post'}}{{#unless post.image}}noimage{{/unless}}{{/is}}">
 
     {{! Everything else gets inserted here }}
     {{{body}}}
