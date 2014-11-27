@@ -45,9 +45,13 @@
                     <strong>Feed</strong>
                 </a>
 
+                {{#if image}}
                 <a href="{{url}}" class="photo">
-                    <img src="{{image}}" alt="{{name}}">
+                    <span style="background-image: url('{{image}}');">
+                        <img src="{{image}}" alt="{{name}}">
+                    </span>
                 </a>
+                {{/if}}
 
                 <div class="details">
                     <h4><a href="{{url}}" class="url n">{{name}}</a></h4>

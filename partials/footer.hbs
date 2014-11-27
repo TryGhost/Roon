@@ -5,9 +5,15 @@
                 <span aria-hidden="true" data-icon=")"></span>
                 <strong>Feed</strong>
             </a>
+
+            {{#if @blog.logo}}
             <a href="{{@blog.url}}" class="photo">
-                <img src="{{@blog.logo}}" alt="{{@blog.title}}">
+                <span style="background-image: url('{{@blog.logo}}');">
+                    <img src="{{@blog.logo}}" alt="{{@blog.title}}">
+                </span>
             </a>
+            {{/if}}
+
             <div class="details">
                 <h4><a href="{{@blog.url}}" class="url n">{{@blog.title}}</a></h4>
                 <a href="{{@blog.url}}" class="js-remove-domain-schema">{{@blog.url}}</a><br>

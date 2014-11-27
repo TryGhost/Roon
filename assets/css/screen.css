@@ -1241,16 +1241,36 @@ body>footer div.vcard span.given-name, body>footer div.vcard span.family-name, a
 }
 body>footer .photo, article>footer .photo {
     float: left;
-    margin-right: 22px
-}
-body>footer img, article>footer img {
+    margin-right: 22px;
+
     height: 100px;
     width: 100px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
-    border-radius: 2px
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+    position: relative;
+    background: #fff;
+    border: 1px solid rgba(33, 39, 45, 0.17);
+}
+body>footer .photo span, article>footer .photo span {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    bottom: 18px;
+    left: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+body>footer .photo img, article>footer .photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
 }
 body>footer .details, article>footer .details {
     padding-top: 10px;
@@ -1285,30 +1305,38 @@ body>footer #user_bio .inner, article>footer #user_bio .inner {
     right: 26px;
     width: 62px;
     height: 62px;
-    background-color: rgba(33, 39, 45, 0.17);
+    background-color: #fff;
+    border: 1px solid rgba(33, 39, 45, 0.17);
     -webkit-border-radius: 60px;
     -moz-border-radius: 60px;
     -ms-border-radius: 60px;
     -o-border-radius: 60px;
     border-radius: 60px;
     z-index: 3;
-    -webkit-transition-property: top, right;
-    -moz-transition-property: top, right;
-    -o-transition-property: top, right;
-    transition-property: top, right;
-    -webkit-transition-duration: 0.2s;
-    -moz-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
+    -webkit-transition-property: all 0.2s;
+    -moz-transition-property: all 0.2s;
+    -o-transition-property: all 0.2s;
+    transition-property: all 0.2s;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+#blog_badge:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
 }
 #blog_badge span {
     font-size: 1px;
     color: transparent;
-    user-select: none;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    bottom: 12px;
+    left: 12px;
+
 }
 body.user #blog_badge {
     -webkit-transition-property: none;
@@ -1538,26 +1566,6 @@ body.touch.user article .readmore {
     body.user>header h1 {
         padding-top: 70px
     }
-    body.user>#blog_badge {
-        width: 43px;
-        height: 43px;
-        top: 14px;
-        right: 10px
-    }
-    body.user>#blog_badge span {
-        width: 41px;
-        height: 31px;
-        padding-top: 10px
-    }
-    body.user>#blog_badge span {
-        width: 17px;
-        height: 21px;
-        margin-left: 13px;
-        -webkit-background-size: 100%;
-        -moz-background-size: 100%;
-        -o-background-size: 100%;
-        background-size: 100%
-    }
     body.user article:first-of-type {
         margin-top: 60px
     }
@@ -1748,18 +1756,10 @@ body.touch.user article .readmore {
         height: 43px
     }
     #blog_badge span {
-        width: 41px;
-        height: 31px;
-        padding-top: 10px
-    }
-    #blog_badge span {
-        width: 17px;
-        height: 21px;
-        margin-left: 13px;
-        -webkit-background-size: 100%;
-        -moz-background-size: 100%;
-        -o-background-size: 100%;
-        background-size: 100%
+        top: 9px;
+        right: 9px;
+        bottom: 9px;
+        left: 9px;
     }
     html[dir=rtl] #blog_badge span {
         margin-left: 0;
