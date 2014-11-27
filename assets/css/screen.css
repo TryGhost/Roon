@@ -1278,7 +1278,7 @@ body>footer #user_bio .inner, article>footer #user_bio .inner {
     line-height: 1.6em;
     color: #a4adb6
 }
-#roon_badge {
+#blog_badge {
     position: absolute;
     display: block;
     top: 30px;
@@ -1300,33 +1300,17 @@ body>footer #user_bio .inner, article>footer #user_bio .inner {
     -moz-transition-duration: 0.2s;
     -o-transition-duration: 0.2s;
     transition-duration: 0.2s;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
-#roon_badge span {
-    display: block;
-    width: 60px;
-    height: 45px;
-    padding-top: 15px;
-    margin: 1px 0 0 1px;
-    background-color: #fff;
-    -webkit-border-radius: 60px;
-    -moz-border-radius: 60px;
-    -ms-border-radius: 60px;
-    -o-border-radius: 60px;
-    border-radius: 60px
+#blog_badge span {
+    font-size: 1px;
+    color: transparent;
+    user-select: none;
 }
-#roon_badge em {
-    display: block;
-    text-indent: -9999px;
-    width: 24px;
-    height: 30px;
-    margin: 0 0 0 19px;
-    background: transparent url(https://roon-assets.s3.amazonaws.com/assets/roon-icon-15a0561994a53e86396cba8607d49d32.png) no-repeat left top
-}
-#roon_badge:hover em {
-    background-position: left bottom
-}
-body.user #roon_badge {
+body.user #blog_badge {
     -webkit-transition-property: none;
     -moz-transition-property: none;
     -o-transition-property: none;
@@ -1432,11 +1416,11 @@ html[dir=rtl] body>footer .image, html[dir=rtl] article>footer .image {
     margin-left: 22px;
     margin-right: 0
 }
-html[dir=rtl] #roon_badge span {
+html[dir=rtl] #blog_badge span {
     margin-left: 0;
     margin-right: 1px
 }
-html[dir=rtl] #roon_badge span em {
+html[dir=rtl] #blog_badge span {
     margin-left: 0;
     margin-right: 17px
 }
@@ -1482,7 +1466,7 @@ html[dir=rtl] body>a.btn.nav.prev span {
     -o-transform: rotate(0deg) translate(0, 0);
     transform: rotate(0deg) translate(0, 0)
 }
-html[dir=rtl] #roon_badge {
+html[dir=rtl] #blog_badge {
     left: 26px;
     right: inherit
 }
@@ -1554,18 +1538,18 @@ body.touch.user article .readmore {
     body.user>header h1 {
         padding-top: 70px
     }
-    body.user>#roon_badge {
+    body.user>#blog_badge {
         width: 43px;
         height: 43px;
         top: 14px;
         right: 10px
     }
-    body.user>#roon_badge span {
+    body.user>#blog_badge span {
         width: 41px;
         height: 31px;
         padding-top: 10px
     }
-    body.user>#roon_badge span em {
+    body.user>#blog_badge span {
         width: 17px;
         height: 21px;
         margin-left: 13px;
@@ -1641,11 +1625,11 @@ body.touch.user article .readmore {
         zoom: 1;
         *display: inline
     }
-    html[dir=rtl] body.user>#roon_badge span em {
+    html[dir=rtl] body.user>#blog_badge span {
         margin-left: 0;
         margin-right: 12px
     }
-    html[dir=rtl] body.user>#roon_badge {
+    html[dir=rtl] body.user>#blog_badge {
         left: 10px;
         right: inherit
     }
@@ -1757,18 +1741,18 @@ body.touch.user article .readmore {
         background: -o-linear-gradient(rgba(33, 39, 45, 0.25) 0%, rgba(33, 39, 45, 0.9) 75%);
         background: linear-gradient(rgba(33, 39, 45, 0.25) 0%, rgba(33, 39, 45, 0.9) 75%)
     }
-    #roon_badge {
+    #blog_badge {
         top: 14px;
         right: 10px;
         width: 43px;
         height: 43px
     }
-    #roon_badge span {
+    #blog_badge span {
         width: 41px;
         height: 31px;
         padding-top: 10px
     }
-    #roon_badge span em {
+    #blog_badge span {
         width: 17px;
         height: 21px;
         margin-left: 13px;
@@ -1777,11 +1761,11 @@ body.touch.user article .readmore {
         -o-background-size: 100%;
         background-size: 100%
     }
-    html[dir=rtl] #roon_badge span em {
+    html[dir=rtl] #blog_badge span {
         margin-left: 0;
         margin-right: 12px
     }
-    html[dir=rtl] #roon_badge {
+    html[dir=rtl] #blog_badge {
         left: 10px;
         right: inherit
     }
@@ -1803,10 +1787,6 @@ body.touch.user article .readmore {
     }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-    #roon_badge em {
-        background-image: url(https://roon-assets.s3.amazonaws.com/assets/roon-icon@2x-df0ed1a12c13fe694252f30f4e237f4e.png);
-        background-size: 24px 100px
-    }
     #feature_image, body.user article.feature, body.user article .image-holder {
         background-image: url(https://roon-assets.s3.amazonaws.com/assets/image-loading-dark@2x-01d400ba8728300455deb837c451d3ea.gif);
         background-size: 34px 34px

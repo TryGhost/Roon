@@ -25,6 +25,12 @@
     {{! Everything else gets inserted here }}
     {{{body}}}
 
+    {{#if @blog.logo}}
+        <a href="{{@blog.url}}" id="blog_badge" style="background-image: url('{{@blog.logo}}');">
+            <span>{{@blog.title}}</span>
+        </a>
+    {{/if}}
+
     {{!--
     <footer class="site-footer clearfix">
          <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
