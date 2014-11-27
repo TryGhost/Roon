@@ -38,33 +38,55 @@
     </footer>
     --}}
 
-    {{! Ghost outputs important scripts and data with this tag }}
-    {{ghost_foot}}
-
-    {{#is 'post'}}
     <script>
-        function get_text(el) {
-            ret = "";
-            var length = el.childNodes.length;
-            for(var i = 0; i < length; i++) {
-                var node = el.childNodes[i];
-                if(node.nodeType != 8) {
-                    ret += node.nodeType != 1 ? node.nodeValue : get_text(node);
+
+        {{#is 'post'}}
+            function get_text(el) {
+                ret = "";
+                var length = el.childNodes.length;
+                for(var i = 0; i < length; i++) {
+                    var node = el.childNodes[i];
+                    if(node.nodeType != 8) {
+                        ret += node.nodeType != 1 ? node.nodeValue : get_text(node);
+                    }
+                }
+                return ret;
+            }
+            function reading_time () {
+                var post_content = document.getElementById('js-post-content');
+                if (post_content) {
+                    var words = get_text(post_content),
+                        count = words.split(/\s+/).length,
+                        read_time = Math.ceil((count / 150)),
+                        read_time_node = document.createTextNode(read_time + ' min read');
+                    document.getElementById('js-reading-time').appendChild(read_time_node);
                 }
             }
-            return ret;
+        {{/is}}
+
+        function no_schema_links () {
+            var links = document.querySelectorAll('.js-remove-domain-schema');
+            if (links) {
+                for (i = 0; i < links.length; ++i) {
+                    var link = links[i],
+                        text = link.innerHTML,
+                        no_schema = text.replace(/.*?:\/\//g, "");
+                    link.innerHTML = no_schema;
+                }
+            }
         }
 
         window.onload = function () {
-            var words = get_text(document.getElementById('js-post-content')),
-                count = words.split(/\s+/).length,
-                read_time = Math.ceil((count / 150)),
-                read_time_node = document.createTextNode(read_time + ' min read');
-            document.getElementById('js-reading-time').appendChild(read_time_node);
-        }
+            no_schema_links();
 
+            {{#is 'post'}}
+            reading_time();
+            {{/is}}
+        }
     </script>
-    {{/is}}
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
 
 </body>
 </html>
