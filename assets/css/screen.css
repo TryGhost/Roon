@@ -1245,33 +1245,40 @@ body>footer .photo, article>footer .photo {
 
     height: 100px;
     width: 100px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    border-radius: 50px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
     position: relative;
     background: #fff;
-    border: 1px solid rgba(33, 39, 45, 0.17);
     overflow: hidden;
 }
 body>footer .photo span, article>footer .photo span {
     position: absolute;
-    top: 18px;
-    right: 18px;
-    bottom: 18px;
-    left: 18px;
-    background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-}
-
-body>footer .photo.fill span, article>footer .photo.fill span {
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background-size: cover;
+}
+
+body>footer .photo.circle, article>footer .photo.circle {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+    border: 1px solid rgba(33, 39, 45, 0.17);
+}
+body>footer .photo.circle span, article>footer .photo.circle span {
+    top: 18px;
+    right: 18px;
+    bottom: 18px;
+    left: 18px;
+    background-size: contain;
 }
 
 body>footer .photo img, article>footer .photo img {
