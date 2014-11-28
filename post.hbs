@@ -22,18 +22,16 @@
         </div>
 
         {{!-- TODO: Social sharing. Requires JS & embeds --}}
-        {{!--
+
         <menu>
-            <iframe src="/_/like_button?post_id=151560" frameborder="0" scrolling="no" title="Like Questions — Part 2" width="70" height="85"></iframe>
             <a href="" id="btn_share" class="btn" title="Share">
                 <span aria-hidden="true" data-icon="S"></span>
                 <strong>Share</strong>
             </a>
-            <a href="https://twitter.com/intent/tweet?related=roon_app&amp;text=%40soffes%20Interesting%20post%21%20%E2%80%94%20http%3A%2F%2Fsam.roon.io%2Fquestions-part-2" id="btn_comment" class="btn" target="_blank">
+            <a href="http://twitter.com/share?text={{encode title}}&url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" id="btn_comment" class="btn" target="_blank">
                 <span aria-hidden="true" data-icon="C"></span> Comment on Twitter
             </a>
         </menu>
-        --}}
 
 
     {{#author}}
@@ -72,20 +70,39 @@
 
     </article>
 
+    <div id="share_modal">
+        <div class="wrap">
+            <div class="inner">
+                <header>
+                    Share
+                    <a href="" class="close" title="Close">&times;</a>
+                </header>
+
+                <div class="roon-share-links">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-dnt="true">Tweet</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+                    <div id="fb-elems">
+                        <div id="fb-root"></div>
+                        <script>(function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id = id;
+                        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=463438580397968";
+                        fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));</script>
+                        <div class="fb-like" data-send="false" data-layout="button_count" data-width="110" data-show-faces="false" data-font="arial"></div>
+                    </div>
+
+                    <div id="pinit-btn">
+                        <a href="//pinterest.com/pin/create/button/?url={{url absolute="true"}}&amp;description={{encode title}}-{{encode @blog.title}} " data-pin-do="buttonPin" data-pin-config="beside"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png"></a>
+                        <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 {{/post}}
 
 {{!-- TODO: Add next/prev posts --}}
-{{!--
-<div id="post_nav">
-    <nav role="navigation">
-        <a href="http://sam.roon.io/questions-part-2" id="post_next" title="Next Post">
-            <span aria-hidden="true" data-icon=">"></span>
-            Questions — Part 2
-        </a>
-        <a href="http://sam.roon.io/four-questions" id="post_prev" title="Previous Post">
-            Four Questions
-            <span aria-hidden="true" data-icon=">"></span>
-        </a>
-    </nav>
-</div>
---}}
