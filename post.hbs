@@ -21,8 +21,6 @@
             {{content}}
         </div>
 
-        {{!-- TODO: Social sharing. Requires JS & embeds --}}
-
         <menu>
             <a href="" id="btn_share" class="btn" title="Share">
                 <span aria-hidden="true" data-icon="S"></span>
@@ -44,7 +42,7 @@
                 </a>
 
                 {{#if image}}
-                <a href="{{url}}" class="photo">
+                <a href="{{url}}" class="photo fill">
                     <span style="background-image: url('{{image}}');">
                         <img src="{{image}}" alt="{{name}}">
                     </span>
