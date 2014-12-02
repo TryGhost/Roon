@@ -2,7 +2,7 @@
 
 The Roon theme for [Ghost](http://github.com/tryghost/ghost/).
 
-To download, visit the [releases](https://github.com/TryGhost/Roon/releases) page.
+To download, visit the [releases](https://github.com/TryGhost/Roon/releases) page. See the [demo](https://roon.ghost.io).
 
 ## Font Options
 
