@@ -47,97 +47,66 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 @font-face {
     font-family: 'Pictos Custom';
-    src: url("https://roon-assets.s3.amazonaws.com/assets/pictos_custom-52beef7ff40d63aeb7fd02fb9f92db17.eot");
-    src: url("https://roon-assets.s3.amazonaws.com/assets/pictos_custom-52beef7ff40d63aeb7fd02fb9f92db17.eot?#iefix") format("embedded-opentype"),
-         url("https://roon-assets.s3.amazonaws.com/assets/pictos_custom-6fea25599ea2ace79c160430fe5e7b27.woff") format("woff"), url("https://roon-assets.s3.amazonaws.com/assets/pictos_custom-de8b48cfb8832995856e58b81aee7497.ttf") format("truetype");
+    src: url("/assets/fonts/pictos_custom.eot");
+    src: url("/assets/fonts/pictos_custom.eot?#iefix") format("embedded-opentype"),
+         url("/assets/fonts/pictos_custom.woff") format("woff"),
+         url("/assets/fonts/pictos_custom.ttf") format("truetype");
     font-weight: normal;
     font-style: normal
 }
 @font-face {
     font-family: 'Gibson';
-    src: url("https://roon-assets.s3.amazonaws.com/assets/gibson-f47c6c8945a13587a2e43aeefa66a438.eot");
-    src: url("https://roon-assets.s3.amazonaws.com/assets/gibson-f47c6c8945a13587a2e43aeefa66a438.eot?#iefix") format("embedded-opentype"),
-         url("https://roon-assets.s3.amazonaws.com/assets/gibson-5644875e3d5ededb6b6c061a2cb24cdb.woff") format("woff");
+    src: url("/assets/fonts/gibson.eot");
+    src: url("/assets/fonts/gibson.eot?#iefix") format("embedded-opentype"),
+         url("/assets/fonts/gibson.woff") format("woff");
     font-weight: normal;
     font-style: normal
 }
 @font-face {
     font-family: 'Gibson';
-    src: url("https://roon-assets.s3.amazonaws.com/assets/gibson-semibold-b9b26ee1f8b1eaea6ebea745fab9ef3e.eot");
-    src: url("https://roon-assets.s3.amazonaws.com/assets/gibson-semibold-b9b26ee1f8b1eaea6ebea745fab9ef3e.eot?#iefix") format("embedded-opentype"),
-         url("https://roon-assets.s3.amazonaws.com/assets/gibson-semibold-1588abe15f4cfe53309c5b0eac690036.woff") format("woff");
+    src: url("/assets/fonts/gibson-semibold.eot");
+    src: url("/assets/fonts/gibson-semibold.eot?#iefix") format("embedded-opentype"),
+         url("/assets/fonts/gibson-semibold.woff") format("woff");
     font-weight: bold;
     font-style: normal
 }
 @font-face {
     font-family: 'Gibson';
-    src: url("https://roon-assets.s3.amazonaws.com/assets/gibson-semibold-italic-a383d549239dafafdfc10f0b4a10ec42.eot");
-    src: url("https://roon-assets.s3.amazonaws.com/assets/gibson-semibold-italic-a383d549239dafafdfc10f0b4a10ec42.eot?#iefix") format("embedded-opentype"),
-         url("https://roon-assets.s3.amazonaws.com/assets/gibson-semibold-italic-0e67a03c874205fdc356b05bb4e2befb.woff") format("woff");
+    src: url("/assets/fonts/gibson-semibold-italic.eot");
+    src: url("/assets/fonts/gibson-semibold-italic.eot?#iefix") format("embedded-opentype"),
+         url("/assets/fonts/gibson-semibold-italic.woff") format("woff");
     font-weight: bold;
     font-style: italic
 }
 @font-face {
     font-family: 'FiloPro';
-    src: url("https://roon-assets.s3.amazonaws.com/assets/filo-pro-192136198f91e2a69285d5fcae4a630e.eot");
-    src: url("https://roon-assets.s3.amazonaws.com/assets/filo-pro-192136198f91e2a69285d5fcae4a630e.eot?#iefix") format("embedded-opentype"),
-         url("https://roon-assets.s3.amazonaws.com/assets/filo-pro-31ec6cd29d09f015c62c659e3bdee324.woff") format("woff");
+    src: url("/assets/fonts/filo-pro.eot");
+    src: url("/assets/fonts/filo-pro.eot?#iefix") format("embedded-opentype"),
+         url("/assets/fonts/filo-pro.woff") format("woff");
     font-weight: normal;
     font-style: normal
 }
 @font-face {
     font-family: 'FiloPro';
-    src: url("https://roon-assets.s3.amazonaws.com/assets/filo-pro-regular-italic-d45d4cae95956cfe6f541a0dd5a681f7.eot");
-    src: url("https://roon-assets.s3.amazonaws.com/assets/filo-pro-regular-italic-d45d4cae95956cfe6f541a0dd5a681f7.eot?#iefix") format("embedded-opentype"),
-         url("https://roon-assets.s3.amazonaws.com/assets/filo-pro-regular-italic-a24c19357d44cc6c4b9097d6107a8b4b.woff") format("woff");
+    src: url("/assets/fonts/filo-pro-regular-italic.eot");
+    src: url("/assets/fonts/filo-pro-regular-italic.eot?#iefix") format("embedded-opentype"),
+         url("/assets/fonts/filo-pro-regular-italic.woff") format("woff");
     font-weight: normal;
     font-style: italic
 }
 @font-face {
     font-family: 'FiloPro';
-    src: url("https://roon-assets.s3.amazonaws.com/assets/filo-pro-bold-676aa5da6f668bc742714ae0acf7dc30.eot");
-    src: url("https://roon-assets.s3.amazonaws.com/assets/filo-pro-bold-676aa5da6f668bc742714ae0acf7dc30.eot?#iefix") format("embedded-opentype"),
-         url("https://roon-assets.s3.amazonaws.com/assets/filo-pro-bold-ec2200008abebbf794f1d173cd5d5e2c.woff") format("woff");
+    src: url("/assets/fonts/filo-pro-bold.eot");
+    src: url("/assets/fonts/filo-pro-bold.eot?#iefix") format("embedded-opentype"),
+         url("/assets/fonts/filo-pro-bold.woff") format("woff");
     font-weight: bold;
     font-style: normal
 }
 @font-face {
     font-family: 'FiloPro';
-    src: url("https://roon-assets.s3.amazonaws.com/assets/filo-pro-bold-italic-3186dc4c1575af1940b02ae48a3288ce.eot");
-    src: url("https://roon-assets.s3.amazonaws.com/assets/filo-pro-bold-italic-3186dc4c1575af1940b02ae48a3288ce.eot?#iefix") format("embedded-opentype"),
-         url("https://roon-assets.s3.amazonaws.com/assets/filo-pro-bold-italic-08e0f60ecd2352a4c1d37e3d8663a5d3.woff") format("woff");
-    font-weight: bold;
-    font-style: italic
-}
-@font-face {
-    font-family: 'SourceSansPro';
-    src: url("https://roon-assets.s3.amazonaws.com/assets/SourceSansPro-Regular-web-6fcff54661a5d7864dd1469c3a0603a1.eot");
-    src: url("https://roon-assets.s3.amazonaws.com/fonts/SourceSansPro-Regular-web.eot?#iefix") format("embedded-opentype"),
-         url("https://roon-assets.s3.amazonaws.com/assets/SourceSansPro-Regular-web-5dd310de001029a61bbd7f200b022aad.woff") format("woff");
-    font-weight: normal;
-    font-style: normal
-}
-@font-face {
-    font-family: 'SourceSansPro';
-    src: url("https://roon-assets.s3.amazonaws.com/assets/SourceSansPro-It-web-c4bbed29c6843820c8212e04da8b546d.eot");
-    src: url("https://roon-assets.s3.amazonaws.com/assets/SourceSansPro-It-web-c4bbed29c6843820c8212e04da8b546d.eot?#iefix") format("embedded-opentype"),
-         url("https://roon-assets.s3.amazonaws.com/assets/SourceSansPro-It-web-fdce864da473fe71c4fa8e49e229c7fd.woff") format("woff");
-    font-weight: normal;
-    font-style: italic
-}
-@font-face {
-    font-family: 'SourceSansPro';
-    src: url("https://roon-assets.s3.amazonaws.com/assets/SourceSansPro-Bold-web-bfa33fa7a3c9d5d930a5c209169a1815.eot");
-    src: url("https://roon-assets.s3.amazonaws.com/assets/SourceSansPro-Bold-web-bfa33fa7a3c9d5d930a5c209169a1815.eot?#iefix") format("embedded-opentype"),
-         url("https://roon-assets.s3.amazonaws.com/assets/SourceSansPro-Bold-web-b195aaecb45f2f03855ea22db9442f71.woff") format("woff");
-    font-weight: bold;
-    font-style: normal
-}
-@font-face {
-    font-family: 'SourceSansPro';
-    src: url("https://roon-assets.s3.amazonaws.com/assets/SourceSansPro-BoldIt-web-af64f800852438d31fe4cc4f44be9882.eot");
-    src: url("https://roon-assets.s3.amazonaws.com/assets/SourceSansPro-BoldIt-web-af64f800852438d31fe4cc4f44be9882.eot?#iefix") format("embedded-opentype"),
-         url("https://roon-assets.s3.amazonaws.com/assets/SourceSansPro-BoldIt-web-6b071cdc26839116e5c5b46933756392.woff") format("woff");
+    src: url("/assets/fonts/filo-pro-bold-italic.eot");
+    src: url("/assets/fonts/filo-pro-bold-italic.eot?#iefix") format("embedded-opentype"),
+         url("/assets/fonts/filo-pro-bold-italic.woff") format("woff");
     font-weight: bold;
     font-style: italic
 }
@@ -149,7 +118,7 @@ body .btn, body>header h1, body article header h1, body>footer .details h4, body
     font-family: "Gibson", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
 }
 body article time, body article>.meta, body article>header .count, body article>footer, body article>footer h4, body article .text, body article .text blockquote {
-    font-family: "SourceSansPro", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
+    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
 }
 body.serif {
     font-family: "FiloPro", "Georgia", "Times New Roman", serif
