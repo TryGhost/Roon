@@ -698,7 +698,7 @@ article .text img {
 }
 article .text span.roon-img {
     display: block;
-    background: #ededee url(https://roon-assets.s3.amazonaws.com/assets/image-loading-light-0eb3f321d3499ad012623d62cf2a37e4.gif) no-repeat center center;
+    background: transparent url(https://roon-assets.s3.amazonaws.com/assets/image-loading-light-0eb3f321d3499ad012623d62cf2a37e4.gif) no-repeat center center;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
