@@ -47,66 +47,66 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 @font-face {
     font-family: 'Pictos Custom';
-    src: url("/assets/fonts/pictos_custom.eot");
-    src: url("/assets/fonts/pictos_custom.eot?#iefix") format("embedded-opentype"),
-         url("/assets/fonts/pictos_custom.woff") format("woff"),
-         url("/assets/fonts/pictos_custom.ttf") format("truetype");
+    src: url("../fonts/pictos_custom.eot");
+    src: url("../fonts/pictos_custom.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/pictos_custom.woff") format("woff"),
+         url("../fonts/pictos_custom.ttf") format("truetype");
     font-weight: normal;
     font-style: normal
 }
 @font-face {
     font-family: 'Gibson';
-    src: url("/assets/fonts/gibson.eot");
-    src: url("/assets/fonts/gibson.eot?#iefix") format("embedded-opentype"),
-         url("/assets/fonts/gibson.woff") format("woff");
+    src: url("../fonts/gibson.eot");
+    src: url("../fonts/gibson.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/gibson.woff") format("woff");
     font-weight: normal;
     font-style: normal
 }
 @font-face {
     font-family: 'Gibson';
-    src: url("/assets/fonts/gibson-semibold.eot");
-    src: url("/assets/fonts/gibson-semibold.eot?#iefix") format("embedded-opentype"),
-         url("/assets/fonts/gibson-semibold.woff") format("woff");
+    src: url("../fonts/gibson-semibold.eot");
+    src: url("../fonts/gibson-semibold.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/gibson-semibold.woff") format("woff");
     font-weight: bold;
     font-style: normal
 }
 @font-face {
     font-family: 'Gibson';
-    src: url("/assets/fonts/gibson-semibold-italic.eot");
-    src: url("/assets/fonts/gibson-semibold-italic.eot?#iefix") format("embedded-opentype"),
-         url("/assets/fonts/gibson-semibold-italic.woff") format("woff");
+    src: url("../fonts/gibson-semibold-italic.eot");
+    src: url("../fonts/gibson-semibold-italic.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/gibson-semibold-italic.woff") format("woff");
     font-weight: bold;
     font-style: italic
 }
 @font-face {
     font-family: 'FiloPro';
-    src: url("/assets/fonts/filo-pro.eot");
-    src: url("/assets/fonts/filo-pro.eot?#iefix") format("embedded-opentype"),
-         url("/assets/fonts/filo-pro.woff") format("woff");
+    src: url("../fonts/filo-pro.eot");
+    src: url("../fonts/filo-pro.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/filo-pro.woff") format("woff");
     font-weight: normal;
     font-style: normal
 }
 @font-face {
     font-family: 'FiloPro';
-    src: url("/assets/fonts/filo-pro-regular-italic.eot");
-    src: url("/assets/fonts/filo-pro-regular-italic.eot?#iefix") format("embedded-opentype"),
-         url("/assets/fonts/filo-pro-regular-italic.woff") format("woff");
+    src: url("../fonts/filo-pro-regular-italic.eot");
+    src: url("../fonts/filo-pro-regular-italic.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/filo-pro-regular-italic.woff") format("woff");
     font-weight: normal;
     font-style: italic
 }
 @font-face {
     font-family: 'FiloPro';
-    src: url("/assets/fonts/filo-pro-bold.eot");
-    src: url("/assets/fonts/filo-pro-bold.eot?#iefix") format("embedded-opentype"),
-         url("/assets/fonts/filo-pro-bold.woff") format("woff");
+    src: url("../fonts/filo-pro-bold.eot");
+    src: url("../fonts/filo-pro-bold.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/filo-pro-bold.woff") format("woff");
     font-weight: bold;
     font-style: normal
 }
 @font-face {
     font-family: 'FiloPro';
-    src: url("/assets/fonts/filo-pro-bold-italic.eot");
-    src: url("/assets/fonts/filo-pro-bold-italic.eot?#iefix") format("embedded-opentype"),
-         url("/assets/fonts/filo-pro-bold-italic.woff") format("woff");
+    src: url("../fonts/filo-pro-bold-italic.eot");
+    src: url("../fonts/filo-pro-bold-italic.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/filo-pro-bold-italic.woff") format("woff");
     font-weight: bold;
     font-style: italic
 }
