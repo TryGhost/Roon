@@ -34,4 +34,4 @@ There are only two values you need to change, conveniently **located at the very
 
 ## Copyright & License
 
-Copyright (c) 2013-2014 Sam Soffes & Ghost Foundation - Released under the [MIT license](https://github.com/TryGhost/Roon/blob/master/LICENSE).
+Copyright (c) 2013-2015 Sam Soffes & Ghost Foundation - Released under the [MIT license](LICENSE).
