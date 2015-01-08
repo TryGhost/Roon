@@ -1,6 +1,8 @@
 {{! This is the post loop - each post will be output using this markup }}
 {{#foreach posts}}
-<article class="{{post_class}}">
+
+{{!-- Add a `featured` class to the first post on each page, if it has an image --}}
+<article class="{{post_class}} {{#if @first}}{{#if image}}featured{{/if}}{{/if}}">
 
     {{#if image}}
         <div class="image-holder show">
