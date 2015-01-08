@@ -427,85 +427,27 @@ body.noimage {
     border-top-width: 4px;
     border-top-style: solid;
 }
+
 #feature_image {
     position: relative;
     width: 100%;
     height: 60%;
-    background: #909396 url(https://roon-assets.s3.amazonaws.com/assets/image-loading-dark-1a46c68c8e26a1a16a4ce8e4d75ec33b.gif) no-repeat center center
 }
-#feature_image .inner, #feature_image #feature_image_helper {
+#feature_image .inner {
     position: absolute;
     top: 0;
-    left: 0;
     right: 0;
     bottom: 0;
-    -webkit-transition-property: opacity;
-    -moz-transition-property: opacity;
-    -o-transition-property: opacity;
-    transition-property: opacity;
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0
-}
-#feature_image .inner, #feature_image #feature_image_helper .bg {
-    -webkit-transition-property: opacity;
-    -moz-transition-property: opacity;
-    -o-transition-property: opacity;
-    transition-property: opacity;
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    background-color: transparent;
-    background-repeat: no-repeat;
+    left: 0;
+    background-size: cover;
     background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover
+    background-repeat: no-repeat;
 }
-#feature_image #feature_image_helper {
-    display: none
-}
-#feature_image #feature_image_helper .bg {
-    width: 100%;
-    height: 100%;
-    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=20);
-    opacity: 0.2
-}
-#feature_image.vert .inner, #feature_image.square .inner {
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
-    -webkit-transition-duration: 0.2s;
-    -moz-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s
-}
-#feature_image.vert #feature_image_helper, #feature_image.square #feature_image_helper {
-    display: block
-}
-#feature_image.show {
-    background-image: none
-}
-#feature_image.show .inner {
-    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
-    opacity: 1
-}
-#feature_image.show .inner img {
+#feature_image img {
     width: 0;
     height: 0;
     visibility: hidden;
-    position: absolute
-}
-#feature_image.show.vert #feature_image_helper, #feature_image.show.square #feature_image_helper {
-    background-color: #909396;
-    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
-    opacity: 1
+    position: absolute;
 }
 article {
     margin: 65px auto 0 auto;
@@ -920,7 +862,7 @@ body.user article .image-holder {
     margin: 0 auto 30px auto;
     overflow: hidden;
     max-width: 680px;
-    background: #909396 url(https://roon-assets.s3.amazonaws.com/assets/image-loading-dark-1a46c68c8e26a1a16a4ce8e4d75ec33b.gif) no-repeat center center;
+    /*background: #909396 url(https://roon-assets.s3.amazonaws.com/assets/image-loading-dark-1a46c68c8e26a1a16a4ce8e4d75ec33b.gif) no-repeat center center;*/
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -943,30 +885,12 @@ body.user article .image-holder .inner {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    visibility: hidden;
-    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0;
-    -webkit-transition-property: opacity, visibility;
-    -moz-transition-property: opacity, visibility;
-    -o-transition-property: opacity, visibility;
-    transition-property: opacity, visibility;
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s
 }
 body.user article .image-holder img {
-    display: block;
-    max-width: 100%;
-    visibility: hidden
-}
-body.user article .image-holder.show {
-    background: #909396
-}
-body.user article .image-holder.show .inner {
-    visibility: visible;
-    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
-    opacity: 1
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    position: absolute;
 }
 body.user article .meta {
     display: block;
@@ -1773,10 +1697,6 @@ body.touch.user article .readmore {
     }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-    #feature_image, body.user article.feature, body.user article .image-holder {
-        background-image: url(https://roon-assets.s3.amazonaws.com/assets/image-loading-dark@2x-01d400ba8728300455deb837c451d3ea.gif);
-        background-size: 34px 34px
-    }
     article .text span.roon-img {
         background-image: url(https://roon-assets.s3.amazonaws.com/assets/image-loading-light@2x-5d07f26751af5a375b5e517559fa9f29.gif);
         background-size: 34px 34px
