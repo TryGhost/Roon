@@ -54,80 +54,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     font-weight: normal;
     font-style: normal
 }
-@font-face {
-    font-family: 'Gibson';
-    src: url("../fonts/gibson.eot");
-    src: url("../fonts/gibson.eot?#iefix") format("embedded-opentype"),
-         url("../fonts/gibson.woff") format("woff");
-    font-weight: normal;
-    font-style: normal
-}
-@font-face {
-    font-family: 'Gibson';
-    src: url("../fonts/gibson-semibold.eot");
-    src: url("../fonts/gibson-semibold.eot?#iefix") format("embedded-opentype"),
-         url("../fonts/gibson-semibold.woff") format("woff");
-    font-weight: bold;
-    font-style: normal
-}
-@font-face {
-    font-family: 'Gibson';
-    src: url("../fonts/gibson-semibold-italic.eot");
-    src: url("../fonts/gibson-semibold-italic.eot?#iefix") format("embedded-opentype"),
-         url("../fonts/gibson-semibold-italic.woff") format("woff");
-    font-weight: bold;
-    font-style: italic
-}
-@font-face {
-    font-family: 'FiloPro';
-    src: url("../fonts/filo-pro.eot");
-    src: url("../fonts/filo-pro.eot?#iefix") format("embedded-opentype"),
-         url("../fonts/filo-pro.woff") format("woff");
-    font-weight: normal;
-    font-style: normal
-}
-@font-face {
-    font-family: 'FiloPro';
-    src: url("../fonts/filo-pro-regular-italic.eot");
-    src: url("../fonts/filo-pro-regular-italic.eot?#iefix") format("embedded-opentype"),
-         url("../fonts/filo-pro-regular-italic.woff") format("woff");
-    font-weight: normal;
-    font-style: italic
-}
-@font-face {
-    font-family: 'FiloPro';
-    src: url("../fonts/filo-pro-bold.eot");
-    src: url("../fonts/filo-pro-bold.eot?#iefix") format("embedded-opentype"),
-         url("../fonts/filo-pro-bold.woff") format("woff");
-    font-weight: bold;
-    font-style: normal
-}
-@font-face {
-    font-family: 'FiloPro';
-    src: url("../fonts/filo-pro-bold-italic.eot");
-    src: url("../fonts/filo-pro-bold-italic.eot?#iefix") format("embedded-opentype"),
-         url("../fonts/filo-pro-bold-italic.woff") format("woff");
-    font-weight: bold;
-    font-style: italic
-}
 
 body {
-    font-family: "Gibson", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
 }
 body .btn, body>header h1, body article header h1, body>footer .details h4, body .post-footer .details h4, body #share_modal header a.close, body.user article.feature h1 a {
-    font-family: "Gibson", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
-}
-body article time, body article>.meta, body article>header .count, body .post-footer, body article>footer h4, body article .text, body article .text blockquote {
-    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
 }
 body.serif {
-    font-family: "FiloPro", "Georgia", "Times New Roman", serif
+    font-family: "Merriweather", "Georgia", "Times New Roman", serif
 }
 body.serif>header h1, body.serif>footer, body.serif>footer h4, body.serif #post_nav {
-    font-family: "FiloPro", "Georgia", "Times New Roman", serif
+    font-family: "Merriweather", "Georgia", "Times New Roman", serif
 }
 body.serif>a.btn.nav {
-    font-family: "FiloPro", "Georgia", "Times New Roman", serif;
+    font-family: "Merriweather", "Georgia", "Times New Roman", serif;
     padding-top: 16px;
     padding-bottom: 14px
 }
@@ -135,17 +76,17 @@ body.serif>a.btn.nav.next span {
     margin-top: 2px
 }
 body.serif article time, body.serif article>.meta, body.serif article>header h1, body.serif article>header .count, body.serif article.feature h1 a, body.serif .post-footer, body.serif .post-footer h4 {
-    font-family: "FiloPro", "Georgia", "Times New Roman", serif
+    font-family: "Merriweather", "Georgia", "Times New Roman", serif
 }
 body.serif article .text {
-    font-family: "FiloPro", "Georgia", "Times New Roman", serif;
+    font-family: "Merriweather", "Georgia", "Times New Roman", serif;
     font-size: 17px
 }
 body.serif article .text blockquote {
-    font-family: "FiloPro", "Georgia", "Times New Roman", serif
+    font-family: "Merriweather", "Georgia", "Times New Roman", serif
 }
 body.serif article>menu #btn_comment {
-    font-family: "FiloPro", "Georgia", "Times New Roman", serif;
+    font-family: "Merriweather", "Georgia", "Times New Roman", serif;
     font-size: 13px
 }
 body.serif article>menu #btn_comment span {
