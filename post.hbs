@@ -2,17 +2,17 @@
 
 {{#post}}
 
-    {{#if image}}
+    {{#if feature_image}}
         <div id="feature_image">
-            <div class="inner" style="background-image: url('{{image}}')">
-                <img src="{{image}}">
+            <div class="inner" style="background-image: url('{{img_url feature_image}}')">
+                <img src="{{feature_img}}">
             </div>
         </div>
     {{/if}}
 
-    <article role="main" class="{{#if image}}image{{/if}}">
+    <article role="main" class="{{#if feature_image}}image{{/if}}">
         <header>
-            <a href="{{@blog.url}}" id="home_link">«</a>
+            <a href="{{@site.url}}" id="home_link">«</a>
             <div class="meta"><time datetime="{{date format='YYYY-MM-DD'}}"><a href="{{url}}">{{date format="MMMM DD, YYYY"}}</a></time> <span class="count" id="js-reading-time"></span></div>
             <h1>{{title}}</h1>
         </header>
@@ -32,19 +32,19 @@
         </menu>
 
 
-    {{#author}}
+    {{#primary_author}}
         <footer class="post-footer" role="contentinfo">
 
             <div class="vcard">
-                <a href="{{@blog.url}}/rss" id="btn_feed" class="btn" title="Feed" target="_blank">
+                <a href="{{@site.url}}/rss" id="btn_feed" class="btn" title="Feed" target="_blank">
                     <span aria-hidden="true" data-icon=")"></span>
                     <strong>Feed</strong>
                 </a>
 
-                {{#if image}}
+                {{#if profile_image}}
                 <a href="{{url}}" class="photo">
-                    <span style="background-image: url('{{image}}');">
-                        <img src="{{image}}" alt="{{name}}">
+                    <span style="background-image: url('{{img_url profile_image}}');">
+                        <img src="{{profile_image}}" alt="{{name}}">
                     </span>
                 </a>
                 {{/if}}
@@ -64,7 +64,7 @@
             </div>
 
         </footer>
-    {{/author}}
+    {{/primary_author}}
 
     </article>
 
@@ -93,7 +93,7 @@
                     </div>
 
                     <div id="pinit-btn">
-                        <a href="//pinterest.com/pin/create/button/?url={{url absolute="true"}}&amp;description={{encode title}}-{{encode @blog.title}} " data-pin-do="buttonPin" data-pin-config="beside"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png"></a>
+                        <a href="//pinterest.com/pin/create/button/?url={{url absolute="true"}}&amp;description={{encode title}}-{{encode @site.title}} " data-pin-do="buttonPin" data-pin-config="beside"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png"></a>
                         <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
                     </div>
                 </div>

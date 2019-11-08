@@ -2,18 +2,18 @@
 
 {{#post}}
 
-    {{#if image}}
+    {{#if feature_image}}
         <div id="feature_image">
-            <div class="inner" style="background-image: url('{{image}}')">
-                <img src="{{image}}">
+            <div class="inner" style="background-image: url('{{img_url feature_image}}')">
+                <img src="{{feature_image}}">
             </div>
         </div>
     {{/if}}
 
-    <article role="main" class="{{#if image}}image{{/if}}">
+    <article role="main" class="{{#if feature_image}}image{{/if}}">
 
         <header>
-            <a href="{{@blog.url}}" id="home_link">«</a>
+            <a href="{{@site.url}}" id="home_link">«</a>
             <h1>{{title}}</h1>
         </header>
 

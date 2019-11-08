@@ -2,12 +2,12 @@
 {{#foreach posts}}
 
 {{!-- Add a `featured` class to the first post on each page, if it has an image and isn't already featured --}}
-<article class="{{post_class}} {{#if @first}}{{#if image}}{{#unless featured}}featured{{/unless}}{{/if}}{{/if}}">
+<article class="{{post_class}} {{#if @first}}{{#if feature_image}}{{#unless featured}}featured{{/unless}}{{/if}}{{/if}}">
 
-    {{#if image}}
+    {{#if feature_image}}
         <div class="image-holder">
-            <a href="{{url}}" class="inner" style="background-image: url('{{image}}');">
-                <img src="{{image}}">
+            <a href="{{url}}" class="inner" style="background-image: url('{{img_url feature_image}}');">
+                <img src="{{feature_image}}">
             </a>
         </div>
     {{/if}}
