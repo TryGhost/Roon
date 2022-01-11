@@ -6,7 +6,7 @@ To download, visit the [releases](https://github.com/TryGhost/Roon/releases) pag
 
 ## Font Options
 
-This theme comes with two font options; a serif and sans-serif. Switching between them must be done in the HTML, by changing a `class` on the `<body>` element in [default.hbs](https://github.com/TryGhost/Roon/blob/master/default.hbs#L23).
+This theme comes with two font options; a serif and sans-serif. Switching between them must be done in the HTML, by changing a `class` on the `<body>` element in [default.hbs](https://github.com/TryGhost/Roon/blob/main/default.hbs#L23).
 
 **Sans-Serif - Gibson**
 
@@ -28,7 +28,7 @@ For the serif font, the `<body>` element should look like this:
 
 This theme uses an accent colour for links and the border at the top of pages.
 
-To change this colour, you need to edit [assets/css/screen.css](https://github.com/TryGhost/Roon/blob/master/assets/css/screen.css).
+To change this colour, you need to edit [assets/css/screen.css](https://github.com/TryGhost/Roon/blob/main/assets/css/screen.css).
 
 There are only two values you need to change, conveniently **located at the very top of the file**.
 
