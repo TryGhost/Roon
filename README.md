@@ -34,4 +34,4 @@ There are only two values you need to change, conveniently **located at the very
 
 ## Copyright & License
 
-Copyright (c) 2013-2022 Sam Soffes & Ghost Foundation - Released under the [MIT license](LICENSE).
+Copyright (c) 2013-2025 Sam Soffes & Ghost Foundation - Released under the [MIT license](LICENSE).
